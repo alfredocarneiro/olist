@@ -648,7 +648,7 @@
     </remotesteps>
     <GUI>
       <xloc>736</xloc>
-      <yloc>128</yloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -656,7 +656,7 @@
     <name>Nulls</name>
     <type>IfNull</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>

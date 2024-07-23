@@ -413,18 +413,6 @@
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>Success Dimensao</name>
-      <description/>
-      <type>SUCCESS</type>
-      <attributes/>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>336</xloc>
-      <yloc>96</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
       <name>Job CargaFato</name>
       <description/>
       <type>JOB</type>
@@ -457,19 +445,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>464</xloc>
-      <yloc>96</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>Success Fato</name>
-      <description/>
-      <type>SUCCESS</type>
-      <attributes/>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>592</xloc>
+      <xloc>320</xloc>
       <yloc>96</yloc>
       <attributes_kjc/>
     </entry>
@@ -508,7 +484,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>720</xloc>
+      <xloc>432</xloc>
       <yloc>96</yloc>
       <attributes_kjc/>
     </entry>
@@ -520,7 +496,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>848</xloc>
+      <xloc>560</xloc>
       <yloc>96</yloc>
       <attributes_kjc/>
     </entry>
@@ -536,8 +512,8 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>Job CargaDimensao</from>
-      <to>Success Dimensao</to>
+      <from>DW</from>
+      <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -545,7 +521,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Success Dimensao</from>
+      <from>Job CargaDimensao</from>
       <to>Job CargaFato</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -555,25 +531,7 @@
     </hop>
     <hop>
       <from>Job CargaFato</from>
-      <to>Success Fato</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Success Fato</from>
       <to>DW</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>DW</from>
-      <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
